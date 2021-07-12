@@ -1,0 +1,112 @@
+body{
+    /* display: flex; */
+    justify-content: center;
+    margin: auto;
+}
+
+.container_wrap{
+    display: block;
+    background-color:gray;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 60px;
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.navbar-header{
+    margin: 24px 10px;
+}
+
+a{
+    text-decoration:none;
+ }
+
+ .a_nav{
+     color: white;
+     font-size: 20px;
+ }
+
+legend{
+    font-size: 32px;
+    text-align: center;
+}
+
+fieldset{
+    display: block;
+    justify-content: center;
+    margin: auto;
+    border-style:groove;
+    border-color:lightgray;
+    width: 400px;
+    height: 520px;
+    background-color: rgb(223, 222, 222);
+}
+
+input,
+select,
+textarea{
+    margin-left: 20px;
+}
+
+.d{
+    margin-bottom: 20px;
+}
+
+nav{
+    display: block;
+    width: 100%;
+}
+
+.wrap{
+    display: flex;
+    width: 100%;
+    margin-top: -20px;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.wrap1,
+.wrap2{
+    padding-left: 20px;
+}
+
+.pl{
+    width: 200px;
+    background-color: rgb(236, 233, 233);
+    border: darkgrey solid 2px;
+    border-radius: 10%;
+    padding: 1% 10%;
+    font-size: 20px;
+    margin: 15px auto;
+    
+}
+
+p{
+    margin: 10px;
+}
+
+canvas{
+    margin: 5px auto;
+}
+
+table{
+    border-collapse:separate;
+    border-spacing: 0;
+  }
+  
+  table td{
+    text-align: center;
+    border-left: 1px solid #a8b7c5;
+    border-bottom: 1px solid #a8b7c5;
+    border-top:none;
+    box-shadow: 0px -3px 5px 1px lightgray;
+    padding: 2px;
+  }
+  
+.t{
+    background-color: lightgray;
+}
+  

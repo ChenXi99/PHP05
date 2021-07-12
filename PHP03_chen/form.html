@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="form1.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Head[Start] -->
+<header>
+        <nav class="container_wrap">
+          <div class="container">
+          <div class="navbar-header"><a class="a_nav" href="select_cx.php">飼育DB</a></div>
+          <div class="navbar-header"><a class="a_nav" href="file_view_cx.php">写真DB</a></div>
+          <div class="navbar-header"><a class="a_nav" href="login_cx.php">ログイン</a></div>
+          <div class="navbar-header"><a class="a_nav" href="logout_cx.php">ログアウト</a></div>
+          </div>
+        </nav>
+</header>
+<!-- Head[End] -->
+
+<!-- Main[Start] -->
+
+ <!-- method, action, 各inputのnameを確認してください。  -->
+ <form method="POST" action="insert_cx.php">
+    <div class="jumbotron">
+        <fieldset style="height:500px">
+            <legend>飼育日記🐤</legend>
+            <div class="d"><label>日付  <input type="date" name="date"></label></div>
+            <div class="d"><label>入雛  <input type="number" name="plcmt"></label>羽</div>
+            <div class="d"><label>体重  <input type="number" name="wgt"></label>g</div>
+            <div class="d"><label>死鳥  <input type="number" name="mort"></label>羽</div>
+            <div class="d"><label>仕入  </label>
+                <select name="procure" style="width: 100px;">
+                    <option value="飼料">飼料</option>
+                    <option value="雛">雛</option>
+                    <option value="薬品">薬品</option>
+                    <option value="備品">備品</option>
+                    <option value="スタッフ">スタッフ</option>
+                    <option value="その他">その他</option>
+                </select><input type="number" name="procure_n">円
+            </div>
+            <div class="d"><label>売上 </label>
+                <select name="sales" style="width: 100px;">
+                    <option value="生鳥出荷">生鳥</option>
+                    <option value="タンドリー出荷">タンドリー</option>
+                </select><input type="number" name="sales_n">円
+            </div>
+            
+            <div class="d"><label>メモ  <textarea name="memo" rows="2" cols="40"></textarea></label></div>
+            <input type="submit" value="送信" style="margin-left: 180px;">
+        </form>
+
+            <p>鶏の分布チェック！</p>
+            <form method="POST" action="fileupload_cx.php" enctype="multipart/form-data">
+                <input type="file" name="upfile"><br>
+                <input type="submit" class="btn" value="アップロード">
+            </form>
+
+        </fieldset>
+
+    </div>
+
+</body>
+</html>
